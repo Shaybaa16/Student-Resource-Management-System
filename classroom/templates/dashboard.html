@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard - Resource Management</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page1.css') }}">
+    <img src="{{ url_for('static', filename='profile-background-2.png') }}" alt="Teacher Avatar" class="student-avatar">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Admin Dashboard</h1>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" id="resources-link">Resources</a></li>
+            <li><a href="#" id="courses-link">User Management</a></li>
+            <li><a href="#" id="assignments-link">Report</a></li>
+
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Welcome to the Admin Dashboard</h2>
+        <p>This dashboard allows you to manage resources efficiently.</p>
+        <div class="dashboard-section" id="home-section">
+            <h2>Home Section</h2>
+            <p>This is the home section of the dashboard. You can add more content and widgets here.</p>
+        </div>
+        <div class="dashboard-section" id="resources-section">
+            <h2>Resource Management</h2>
+            <form id="resource-form">
+                <label for="resource-name">Resource Name:</label>
+                <input type="text" id="resource-name" required>
+                <button type="submit">Add Resource</button>
+            </form>
+            <ul id="resource-list"></ul>
+        </div>
+        <div class="dashboard-section" id="users-section">
+            <h2>User Management</h2>
+            <p>This is the user management section. You can manage users and roles here.</p>
+            <h2>Admin</h2>
+            <ul>
+                <li>Admin 1</li>
+                <li>Admin 2</li>
+                <li>Admin 3</li>
+            </ul>
+            <h2>Teachers</h2>
+            <ul>
+                <li>Teacher 1</li>
+                <li>Teacher 2</li>
+                <li>Teacher 3</li>
+            </ul>
+            <h2>Students</h2>
+            <ul>
+                <li>Student 1</li>
+                <li>Student 2</li>
+                <li>Student 3</li>
+            </ul>
+        </div>
+
+        <div class="dashboard-section" id="reports-section">
+            <h2>Reports</h2>
+            <p>Generate and view reports in this section.</p>
+            <ul id="report-list">
+                <li data-report-id="report1">Report 1</li>
+                <li data-report-id="report2">Report 2</li>
+                <li data-report-id="report3">Report 3</li>
+                <!-- Add more dummy data as needed -->
+            </ul>
+            <div id="report-data-container">
+                <!-- Display report data here -->
+            </div>
+        </div>
+    </div>
+    <script src="/static/dashboard.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the report list and report data container
+            var reportList = document.getElementById("report-list");
+            var reportDataContainer = document.getElementById("report-data-container");
+
+            // Add click event listener to the report list
+            reportList.addEventListener("click", function (event) {
+                // Check if the clicked element is an li element
+                if (event.target.tagName === "LI") {
+                    // Get the report ID from the data attribute
+                    var reportId = event.target.getAttribute("data-report-id");
+
+                    // Display report data based on the selected report ID
+                    displayReportData(reportId);
+                }
+            });
+
+            // Function to display report data
+            function displayReportData(reportId) {
+                // Example: Display different data based on the selected report ID
+                var reportData;
+                switch (reportId) {
+                    case "report1":
+                        reportData = "Report on Students:This report delves into the academic progress and involvement of students across various courses. It encompasses an analysis of grades, attendance, and participation in extracurricular activities. The report aims to provide insights into student performance and offers recommendations for improvement and support.";
+                        break;
+                    case "report2":
+                        reportData = "Report on Teachers:Focused on the performance and contributions of our teaching staff, this report includes evaluations of teaching methodologies, student feedback, and participation in professional development activities. It seeks to assess the effectiveness of educators in delivering quality education and identifies areas for growth and enhancement.";
+                        break;
+                    case "report3":
+                        reportData = "University Overview Report:The University Overview Report offers a comprehensive analysis of the institution's overall performance. It covers essential metrics such as enrollment, graduation rates, faculty achievements, and research initiatives. Additionally, the report highlights any notable accomplishments, challenges, and outlines future goals for the university.";
+                        break;
+                    // Add more cases as needed
+
+                    default:
+                        reportData = "No data available for the selected report.";
+                        break;
+                }
+
+                // Update the content of the report data container
+                reportDataContainer.innerHTML = "<p>" + reportData + "</p>";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,846 @@
+/* page1.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #007bff;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbar a.active {
+    background-color: #0056b3;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.content {
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Add your additional CSS styles as needed */
+/* dashboard.css */
+/* dashboard.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+}
+
+ul li a.active {
+    background-color: #007bff;
+}
+ul li a.grade:hover
+{
+    background-color: #007bff;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Add your additional CSS styles as needed */
+/* dashboard.css */
+
+/* Your existing CSS styles */
+
+/* Add responsive design using media queries */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar ul {
+        flex-direction: column;
+    }
+}
+/* dashboard.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+}
+
+ul li a:hover{
+    background-color: #007bff;
+}
+ul li a.active {
+    background-color: #007bff;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+ul, table {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add responsive design using media queries */
+
+
+
+/* Style for Attendance and Transcript sections */
+.dashboard-section ul {
+    list-style: none;
+    text-align: left;
+}
+
+.dashboard-section table {
+    border-collapse: collapse;
+}
+
+.dashboard-section th, .dashboard-section td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.dashboard-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dashboard-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Additional styles for Attendance */
+.dashboard-section #attendance-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.dashboard-section #attendance-list li.below-80 {
+    color: red;
+}
+
+.dashboard-section #attendance-list li.above-80 {
+    color: green;
+}
+
+/* Add responsive design using media queries */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar ul {
+        flex-direction: column;
+    }
+}
+
+
+/* Add your existing CSS styles here */
+
+/* Slideshow Styles */
+/* Add your existing CSS styles here */
+
+/* Slideshow Styles */
+/* Add your existing CSS styles here */
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    animation: fade 3s linear infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: #0074d9;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+/* Add some basic styling for better presentation */
+
+/* Add more attractive styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.student-container {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.student-container h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style for Enrolled Subjects container */
+.enrolled-subjects-container {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enrolled-subjects-container h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.enrolled-subjects-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.enrolled-subjects-container li {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.enrolled-subjects-container li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Add your additional CSS styles as needed */
+/* Add your existing CSS styles as needed */
+
+/* Style for Grades container */
+.grades-container {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grades-container h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.grade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.grade:last-child {
+    border-bottom: none;
+}
+
+.grade:hover {
+    background-color: #f5f5f5;
+}
+
+.grade span {
+    font-size: 18px;
+    color: #555;
+}
+
+.grade strong {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Add your additional CSS styles as needed */
+/* Add your existing CSS styles as needed */
+
+/* Add your existing CSS styles as needed */
+
+/* Style for Attendance container */
+.attendance-container {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-container h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.attendance-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.attendance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.attendance-item:last-child {
+    border-bottom: none;
+}
+
+.attendance-item:hover {
+    background-color: #f5f5f5;
+}
+
+.attendance-item span {
+    font-size: 18px;
+    color: #555;
+}
+
+.attendance-item strong {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Styling for attendance percentage */
+.attendance-below-80 {
+    color: red;
+}
+
+.attendance-above-80 {
+    color: green;
+}
+
+/* Add your additional CSS styles as needed */
+/* Your existing CSS styles */
+
+/* Add your additional CSS styles as needed */
+
+/* New styles for Marks section */
+
+
+
+.dashboard-section#marks-section {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-section#marks-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#marks-list {
+    list-style: none;
+    padding: 0;
+}
+
+#marks-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#marks-list li span {
+    font-weight: bold;
+}
+
+#marks-list li:hover {
+    background-color: #f5f5f5;
+}
+
+#marks-list li:last-child {
+    margin-bottom: 0;
+}
+
+#marks-list li strong {
+    font-size: 20px;
+    color: #333;
+}
+
+
+
+
+/* Add your additional CSS styles as needed */
+/* Your existing CSS styles */
+
+/* Add your additional CSS styles as needed */
+
+/* New styles for Register Courses section */
+.dashboard-section#register-courses-section {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-section#register-courses-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#course-registration-form {
+    display: grid;
+    gap: 15px;
+}
+
+#course-registration-form label {
+    font-size: 18px;
+    color: #333;
+}
+
+#course-registration-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#course-registration-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#course-registration-form button:hover {
+    background-color: #0056b3;
+}
+/* End of new styles for Register Courses section */
+/* New styles for Course Registrations table */
+
+
+
+/* Style for Attendance section */
+.dashboard-section#attendance-section {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-section#attendance-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#attendance-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#attendance-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#attendance-list li:hover {
+    background-color: #f5f5f5;
+}
+
+#attendance-list li:last-child {
+    margin-bottom: 0;
+}
+
+#attendance-list li strong {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Styling for attendance status */
+#attendance-list li.present {
+    color: green;
+}
+
+#attendance-list li.absent {
+    color: red;
+}
+/* Style for Transcript section */
+.dashboard-section#transcript-section {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-section#transcript-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#transcript-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transcript-list li {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#transcript-list li span {
+    display: block;
+    margin-top: 5px;
+}
+
+#transcript-list li strong {
+    font-size: 20px;
+    color: #333;
+}
+/* Your existing CSS styles */
+
+/* Additional styling for enhanced features */
+.dashboard-section .user-role {
+    margin-top: 20px;
+}
+
+.dashboard-section .user-role h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard-section .user-role ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-section .user-role li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.dashboard-section #reports-section .report-options {
+    margin-top: 20px;
+}
+
+.dashboard-section #reports-section label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.dashboard-section #reports-section select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dashboard-section #reports-section button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-section #reports-section button:hover {
+    background-color: #0056b3;
+}
+
+.dashboard-section #reports-section #generated-report {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Your existing responsive design */
+
+/* End of your CSS styles */
